@@ -1,0 +1,50 @@
+name: face_quack
+description: quack quack face.
+publish_to: none
+
+version: 1.0.0+3
+
+environment:
+  sdk: ">=2.17.0-0 <3.0.0"
+
+dependencies:
+  google_mobile_ads: ^1.2.0
+  audioplayers: ^2.0.0
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.2.16
+  image_picker: ^0.8.6
+  intl: ^0.18.0
+  provider: ^6.0.2
+  window_size:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+  flutter_launcher_icons: ^0.11.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/sounds/
+  fonts:
+    - family: Corben
+      fonts:
+        - asset: fonts/Corben/Corben-Bold.ttf
+          weight: 700
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icons/icon_app.png"
+  adaptive_icon_background: "assets/icons/icon_bg.png"
+  adaptive_icon_foreground: "assets/icons/icon_fg.png"
+  min_sdk_android: 21
+#  flutter pub run flutter_launcher_icons
